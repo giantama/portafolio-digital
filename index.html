@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gianluigi Tamayo Prado | Portafolio</title>
+<meta name="description" content="Portafolio de Gianluigi Tamayo Prado, estudiante de Ciencia de Datos e Inteligencia Artificial en ESPOL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#eef1f6; --grid:#d9dfeb; --ink:#14213d; --muted:#4a5878;
+    --accent:#2f3fd8; --card:#ffffff; --line:#c3cbdd;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#0f1626; --grid:#1b2540; --ink:#e8ecf7; --muted:#9aa8c9;
+      --accent:#8f9bff; --card:#162036; --line:#2a3658; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; color:var(--ink); background-color:var(--paper);
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:32px 32px;
+    font-family:"IBM Plex Sans",system-ui,sans-serif; line-height:1.6;
+  }
+  a{color:var(--accent)}
+  a:focus-visible{outline:3px solid var(--accent); outline-offset:3px}
+  .wrap{max-width:960px; margin:0 auto; padding:0 24px}
+  header.top{padding:20px 0}
+  nav{display:flex; gap:20px; flex-wrap:wrap; font-weight:500}
+  nav a{color:var(--ink); text-decoration:none; border-bottom:2px solid transparent}
+  nav a:hover{border-color:var(--accent)}
+  .hero{padding:72px 0 56px}
+  h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif; line-height:1.1; margin:0}
+  h1{font-size:clamp(2.6rem,8vw,5.2rem); font-weight:800; letter-spacing:-.03em}
+  .role{font-size:1.2rem; color:var(--muted); margin:16px 0 24px; max-width:48ch}
+  .links{display:flex; gap:12px; flex-wrap:wrap}
+  .btn{display:inline-block; padding:10px 18px; border:2px solid var(--ink); color:var(--ink);
+    text-decoration:none; font-weight:500; background:var(--card)}
+  .btn.primary{background:var(--accent); border-color:var(--accent); color:#fff}
+  .btn:hover{transform:translateY(-2px)}
+  @media (prefers-reduced-motion: reduce){.btn:hover{transform:none}}
+  section{padding:48px 0}
+  h2{font-size:2rem; font-weight:700; margin-bottom:24px}
+  .panel{background:var(--card); border:1px solid var(--line); padding:24px}
+  .about{display:grid; gap:24px; grid-template-columns:1.4fr 1fr}
+  @media (max-width:700px){.about{grid-template-columns:1fr}}
+  .about p{margin:0 0 12px; max-width:62ch}
+  dl{margin:0}
+  dt{font-weight:500}
+  dd{margin:0 0 12px; color:var(--muted)}
+  .projects{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .project{display:flex; flex-direction:column; gap:12px}
+  .project h3{font-size:1.3rem}
+  .project p{margin:0}
+  .tags{display:flex; flex-wrap:wrap; gap:6px; list-style:none; padding:0; margin:0}
+  .tags li{border:1px solid var(--line); padding:2px 10px; font-size:.85rem; color:var(--muted)}
+  .project .repo{margin-top:auto; font-weight:500}
+  .tech{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .tech h3{font-size:1.1rem; margin-bottom:8px}
+  .tech p{margin:0; color:var(--muted)}
+  footer{padding:40px 0 56px; color:var(--muted); border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <nav aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Gianluigi Tamayo Prado</h1>
+      <p class="role">Estudiante de Ciencia de Datos e Inteligencia Artificial en ESPOL. Me gusta convertir datos en algo que se pueda entender y usar.</p>
+      <div class="links">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="https://github.com/giantama">GitHub</a>
+      </div>
+    </div>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="about">
+        <div class="panel">
+          <p>Soy estudiante de 4to semestre de la carrera de Ciencia de Datos e Inteligencia Artificial en la Escuela Superior Politécnica del Litoral (ESPOL), en Guayaquil, Ecuador.</p>
+          <p>Combino mi formación técnica con experiencia real de atención al cliente y apoyo en la operación de un negocio familiar. Aprendo rápido, trabajo bien en equipo y me gusta resolver problemas con iniciativa.</p>
+          <p>Hablo español (nativo) e inglés (avanzado). Fuera de la universidad toco piano y guitarra acústica.</p>
+        </div>
+        <div class="panel">
+          <dl>
+            <dt>Formación</dt>
+            <dd>B.S. en Ciencia de Datos e Inteligencia Artificial, ESPOL (desde 04/2025)</dd>
+            <dt>Certificación</dt>
+            <dd>Herramientas de Colaboración Digital, ESPOL (Open edX), 120 horas, 01/2024</dd>
+            <dt>Reconocimiento</dt>
+            <dd>Diploma de Excelencia Académica de bachillerato (promedio 9.17/10)</dd>
+            <dt>Experiencia</dt>
+            <dd>Asistente en negocio familiar de ropa (2024 a la fecha); tripulante en McDonald's (2023)</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="projects">
+
+        <article class="panel project">
+          <h3>Torneo de Interfacultades · GG SPOL</h3>
+          <p>Sitio informativo para el torneo de videojuegos interfacultades de ESPOL. Presenta las disciplinas, la edición 2026, la sede y el canal de inscripción en una galería adaptable con panel de información. Proyecto en pareja, con análisis del evento, planificación de secciones y despliegue.</p>
+          <ul class="tags"><li>HTML5</li><li>CSS</li><li>JavaScript</li><li>Plantilla Multiverse</li><li>GitHub Pages</li></ul>
+          <a class="repo" href="https://github.com/elmanuel2000/Proyecto-02-DAWM">Ver repositorio</a>
+          <a class="repo" href="https://elmanuel2000.github.io/Proyecto-02-DAWM/">Ver sitio publicado</a>
+        </article>
+
+        <article class="panel project">
+          <h3>Sistema de gestión de restaurante</h3>
+          <p>Aplicación de consola en Java que simula la administración básica de un restaurante: menús, pedidos, mesas, clientes y meseros. Trabajo en grupo, con el diseño del sistema documentado en diagramas UML.</p>
+          <ul class="tags"><li>Java</li><li>NetBeans</li><li>PlantUML</li></ul>
+          <a class="repo" href="https://github.com/Axemnoli/G9_Sistema_Gesti-n_Restaurante">Ver repositorio</a>
+        </article>
+
+        <article class="panel project">
+          <h3>Portafolio de identidad digital</h3>
+          <p>Este mismo sitio: una página estática que presenta mi perfil, mis proyectos y mis herramientas, publicada con GitHub Pages y construida por fases en el historial de commits.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>Git</li><li>GitHub Pages</li></ul>
+          <a class="repo" href="https://github.com/giantama/portafolio-digital">Ver repositorio</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="tecnologias">
+      <h2>Tecnologías</h2>
+      <div class="tech">
+        <div class="panel">
+          <h3>Java</h3>
+          <p>Lenguaje del sistema de gestión de restaurante, donde modelé menús, pedidos, mesas, clientes y meseros con programación orientada a objetos.</p>
+        </div>
+        <div class="panel">
+          <h3>NetBeans</h3>
+          <p>Entorno en el que desarrollé, ejecuté y probé el sistema del restaurante.</p>
+        </div>
+        <div class="panel">
+          <h3>PlantUML</h3>
+          <p>Diagramas UML para planificar la estructura del sistema del restaurante antes de programarlo.</p>
+        </div>
+        <div class="panel">
+          <h3>HTML5, CSS y JavaScript</h3>
+          <p>Tecnologías base del desarrollo web que aprendí en el curso. Las apliqué en el sitio del Torneo de Interfacultades, adaptado desde la plantilla Multiverse, y en este portafolio.</p>
+        </div>
+        <div class="panel">
+          <h3>Visual Studio Code y GitHub Codespaces</h3>
+          <p>Editor y entorno de desarrollo en la nube con los que escribo y pruebo mis páginas web durante el curso.</p>
+        </div>
+        <div class="panel">
+          <h3>Git y GitHub Pages</h3>
+          <p>Control de versiones con commits periódicos y publicación del torneo y de este portafolio como sitios web.</p>
+        </div>
+        <div class="panel">
+          <h3>Python, R y MySQL</h3>
+          <p>Herramientas de mi carrera para análisis de datos y bases de datos. Las uso en Google Colab y PyCharm.</p>
+        </div>
+        <div class="panel">
+          <h3>Figma</h3>
+          <p>Diseño de prototipos, como el dashboard de ventas globales de videojuegos.</p>
+        </div>
+        <div class="panel">
+          <h3>IA aplicada</h3>
+          <p>Desarrollo asistido por IA, ingeniería de prompts e integración de LLMs.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <p>Contacto: <a href="https://github.com/giantama">github.com/giantama</a> · <a href="mailto:gianluigitamayo2004@gmail.com">gianluigitamayo2004@gmail.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
